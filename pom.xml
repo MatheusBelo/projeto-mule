@@ -17,6 +17,8 @@
 		<mule.maven.plugin.version>3.8.0</mule.maven.plugin.version>
 	</properties>
 
+<profile>
+   <id>cloudhub</id>
 	<build>
 		<plugins>
 			<plugin>
@@ -24,18 +26,33 @@
 				<artifactId>maven-clean-plugin</artifactId>
 				<version>3.2.0</version>
 			</plugin>
-			<plugin>
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
-				<extensions>true</extensions>
-				<configuration>
-					<classifier>---- select project type ----</classifier>
-				</configuration>
-			</plugin>
+      <plugin>
+        <groupId>org.mule.tools.maven</groupId>
+        <artifactId>mule-maven-plugin</artifactId>
+        <version>3.7.1</version>
+        <extensions>true</extensions>
+        <configuration>
+          <cloudHubDeployment>
+            <deploymentType>cloudhub</deploymentType> 
+            <uri>https://anypoint.mulesoft.com</uri>
+            <muleVersion>${mule.version}</muleVersion>
+            <username>${anypoint.username}</username>
+            <password>${anypoint.password}</password>
+            <applicationName>${artifactId}</applicationName>
+            <environment>${cloudhub.env}</environment>
+            <businessGroup>${anypoint.businessGroup}</businessGroup>
+            <region>${cloudhub.region}</region>
+            <workers>${cloudhub.workers}</workers>
+            <workerType>${cloudhub.workerType}</workerType>
+            <properties>
+              <key>value</key>
+            </properties>
+          </cloudHubDeployment>
+        </configuration>
+      </plugin>
 		</plugins>
 	</build>
-
+</profile>
 	<dependencies>
 		<dependency>
 			<groupId>org.mule.connectors</groupId>
