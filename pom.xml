@@ -37,6 +37,7 @@
 					<password>${password}</password>
 					<applicationName>${application.name}</applicationName>
 					<environment>${environment}</environment>
+					<skipDeploymentVerification>true</skipDeploymentVerification>
 <!-- 					<region>${region}</region> -->
 					<workers>${workers}</workers>
 					<workerType>${worker.Type}</workerType>
@@ -115,6 +116,12 @@
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
+	<pluginRepositories>
+		<pluginRepository>
+		  <id>mule-public</id>
+		  <url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
+		</pluginRepository>
+	  </pluginRepositories>
 
 
 </project>
