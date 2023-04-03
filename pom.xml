@@ -6,7 +6,7 @@
 	<groupId>com.javastreets</groupId>
 	<artifactId>mule-maven-deployment-demo</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
-	<packaging>mule</packaging>
+	<packaging>mule-application</packaging>
 	<name>Mule mule-maven-deployment-demo Application</name>
 
 	<properties>
@@ -16,15 +16,6 @@
 
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-app-maven-plugin</artifactId>
-				<version>${mule.tools.version}</version>
-				<extensions>true</extensions>
-				<configuration>
-					<copyToAppsDirectory>false</copyToAppsDirectory>
-				</configuration>
-			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-deploy-plugin</artifactId>
