@@ -7,8 +7,8 @@ pipeline {
       stage('Build') { 
           steps {
               sh 'mvn --version'
-              sh 'mvn compile -U'
-              // sh 'mvn package'
+              sh 'mvn compile -X'
+              sh 'mvn package'
             }
           }
       stage('Deploy CloudHub') { 
