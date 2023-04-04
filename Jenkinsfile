@@ -10,6 +10,10 @@ pipeline {
               sh 'mvn compile -X'
 //               sh 'mvn package'
             }
+      stage('Build de Nova Pipeline') { 
+          steps {
+              build 'teste2'
+            }    
           }
       stage('Deploy CloudHub') { 
       environment {
