@@ -8,7 +8,6 @@ pipeline {
           steps {
               sh 'mvn --version'
               sh 'mvn compile -X'
-//               sh 'mvn package'
             }
       stage('Build de Nova Pipeline') { 
           steps {
