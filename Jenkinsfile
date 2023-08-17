@@ -8,6 +8,7 @@ pipeline {
           steps {
               sh 'mvn --version'
               sh 'mvn compile -X'
+              //sh 'sudo mkdir devops'
             }
           }
       stage('Build de Nova Pipeline') { 
