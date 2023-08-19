@@ -3,7 +3,7 @@ pipeline {
     tools {
     maven 'maven' //ou java
   } 
-  stages {
+  stages{
       stage('Instalar Dependencias') {
           steps {
               sh 'sudo apt install default-jre' // inatala o jre
