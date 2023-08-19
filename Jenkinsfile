@@ -4,6 +4,11 @@ pipeline {
     maven 'maven' //ou java
   } 
   stages {
+      stage('Ler Dockerfile') {
+          steps {
+          sh 'docker build -t snubatest:1 .'
+        }
+      }
       stage('Instalar Dependencias') {
           steps {
             sh 'apt update'
