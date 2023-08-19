@@ -12,13 +12,15 @@ pipeline {
             }
 
           }
-      stage('Build')
+      stage('Build') {
           steps {
           sh 'javac -cp . olamundo.java'
         }
-      stage('Executa o arquivo compilado')
+      } 
+      stage('Executa o arquivo compilado') {
           steps{
           sh 'java olamundo'
         }        
+      }
  }
 }
