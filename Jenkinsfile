@@ -6,8 +6,9 @@ pipeline {
   stages {
       stage('Instalar Dependencias') {
           steps {
-            sh 'apt install default-jre' // inatala o jre
-            sh 'apt install default-jdk' //instala o jdk
+            sh 'sudo apt update'
+            sh 'sudo apt install default-jre' // inatala o jre
+            sh ' sudoapt install default-jdk' //instala o jdk
             sh 'java -version' // verifica se o java está instalado
             }
 
