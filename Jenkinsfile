@@ -10,7 +10,6 @@ pipeline {
               sh 'sudo apt install default-jdk' //instala o jdk
               sh 'java -version' // verifica se o java está instalado
             }
-          }
       stage('Build')
           steps {
             sh 'javac -cp . olamundo.java'
@@ -19,5 +18,7 @@ pipeline {
           steps{
             sh 'java olamundo'
           }        
+
+          }
  }
 }
