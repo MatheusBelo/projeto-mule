@@ -21,7 +21,7 @@ pipeline {
       stage('Build') {
           steps {
           sh 'javac -cp . olamundo.java'
-          sh 'java --version'
+          // sh 'java --version'
         }
       } 
       stage('Executa o arquivo compilado') {
