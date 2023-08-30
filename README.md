@@ -2,11 +2,11 @@ Projeto feito com o objetivo de implementar práticas de DevOps.
 
 Infraestrutura usada localmente:
 
-Minikube
-Docker
-Jenkins
-Git Bash
-Visual Studio Code
+Minikube | Link de Instalação: https://minikube.sigs.k8s.io/docs/start/
+Docker | Link de Instalação: https://docs.docker.com/get-docker/
+Jenkins | Link de Instalação: https://www.jenkins.io/doc/book/installing/
+Git Bash | Link de Instalação: https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git
+Visual Studio Code | Link de Instalação: https://code.visualstudio.com/download
 
 Objetivos:
 
