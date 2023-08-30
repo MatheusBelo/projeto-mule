@@ -8,6 +8,10 @@ Jenkins | Link de Instalação: https://www.jenkins.io/doc/book/installing/
 Git Bash | Link de Instalação: https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git
 Visual Studio Code | Link de Instalação: https://code.visualstudio.com/download
 
+Tools:
+
+Kubectl | Link de Instalação: https://kubernetes.io/pt-br/docs/tasks/tools/install-kubectl-linux/
+
 Objetivos:
 
 1- Montar a infraestrutura localmente.
