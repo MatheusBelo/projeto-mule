@@ -15,3 +15,9 @@ Objetivos:
 3- Integrar o Jenkins com o Gitlab
 4- Fazer o Jenkins Ler e Executar com sucesso o Jenkinsfile daqui do Github
 5- Fim
+
+
+Comandos Gerais Úteis:
+
+1- sudo /etc/init.d/docker start - "inicia o docker na instância local"
+2- sudo usermod -aG docker $USER && newgrp docker - permite que o minikube use os drivers do docker
