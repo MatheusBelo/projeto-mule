@@ -6,6 +6,6 @@
 
 FROM debian:latest
 
-RUN apt-get update && apt-get install default-jre && apt install default-jdk
+RUN apt-get update && apt-get install default-jre -f && apt install default-jdk -f
 
 CMD bash
