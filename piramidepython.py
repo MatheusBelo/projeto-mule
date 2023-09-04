@@ -2,7 +2,7 @@
 
 length = 10
 astr = "*"
-for i in range(length):
+for i in range(length): #uso de loops for
     for j in range(length-i):
         print(" ", end='')
     print(astr)
