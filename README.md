@@ -25,3 +25,10 @@ Comandos Gerais Úteis:
 
 1- sudo /etc/init.d/docker start - "inicia o docker na instância local"
 2- sudo usermod -aG docker $USER && newgrp docker - permite que o minikube use os drivers do docker
+
+
+Jenkinsfile
+
+1-O jenkinsfile dessa branch usa o dockerfile dessa mesma branch como seu agente.
+2-Pra funcionar, é necessário instalar um agente Docker na VM do Jenkins e executar o agente na VM do jenkins.
+3-A pipeline só vai conseguir ler o dockerfile com o agente docker em execução na VM.
