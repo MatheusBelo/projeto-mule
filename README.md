@@ -34,3 +34,15 @@ Nesse caso, ao invés da branch de produção ser chamada de "Master" ou "Produ�
 
 Essa branch é o ambiente onde a aplicação irá rodar 100%. Ou seja, aqui é onde a aplicação precisa estar rodando sem erros e funcionando perfeitamente. Nela, a aplicação passa a estar disponível pra o público em geral, onde os usuários poderão usar a aplicação completamente e usufruir de suas funcionalidades.
 É considerada o ambiente mais importante do projeto. Tendo em vista que é o ambiente de entrega final da aplicação!
+
+PIPELINES
+
+O QUE É?
+
+Uma pipeline nada mais é que uma maneira de automatizar um processo de implementação que é feito manualmente. O desenvolvedor precisa criar seu código, testá-lo e em seguida gerar um pacote desse código, e implementar o código dentro de um ambiente no qual a aplicação dele fique disponível pra os usuários usarem. Porém, na maioria das vezes todo esse processo leva muito tempo, e é feito pelo desenvolvedor de maneira "manual", ou seja, ele mesmo precisa repetir todos esses processos sempre e isso causa perda de tempo e de qualidade na entrega. Então, a pipeline vai simplesmente repetir os mesmos passos que o desenvolvedor faz, porém de maneira automática.
+Assim, o Dev não precisa ficar repetindo os mesmos passos sempre, pois a pipeline já vai fazer isso pra ele, e vai agilizar o processo de entrega de software e melhorará a qualidade da entrega do produto.
+
+COMO FUNCIONA?
+
+A pipeline irá pegar o código do projeto que um desenvolvedor produz e irá realizar vários passos em sequência até que seja gerado um pacote daquele código produzido, e esse pacote seja implementado dentro de um ambiente.
+
