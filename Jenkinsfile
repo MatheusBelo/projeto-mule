@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-    maven '' //ou java
+    maven //ou java
   } 
   stages {
       // stage('Ler Dockerfile') {
