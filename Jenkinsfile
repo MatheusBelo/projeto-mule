@@ -25,7 +25,7 @@ pipeline {
         }
       } 
       stage('Testes') {
-          sh 'mvn test'
+        sh 'mvn test'
       }
       stage('Executa o arquivo compilado') {
           steps{
