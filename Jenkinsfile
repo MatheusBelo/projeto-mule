@@ -22,11 +22,12 @@ pipeline {
           steps {
           sh 'javac -cp . olamundo.java'
           sh 'java --version'
+          sh 'mvn test'
         }
       } 
-      stage('Testes') {
-        sh 'mvn test'
-      }
+      // stage('Testes') {
+      //   sh 'mvn test'
+      // }
       stage('Executa o arquivo compilado') {
           steps{
           sh 'java olamundo'
