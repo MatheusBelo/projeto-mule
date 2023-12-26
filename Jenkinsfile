@@ -18,12 +18,15 @@ pipeline {
       //       }
 
       //     }
-      stage('Build') {
+      stage('Compilação do arquivo') {
           steps {
           sh 'javac -cp . olamundo.java'
           sh 'java --version'
         }
       } 
+      stage('Testes') {
+          sh 'mvn test'
+      }
       stage('Executa o arquivo compilado') {
           steps{
           sh 'java olamundo'
